@@ -1,5 +1,4 @@
 @import "variables";
-$dark: $gableGreen;
 
 $container-max-widths: (
   sm: 540px,
@@ -9,10 +8,16 @@ $container-max-widths: (
   xxl: 1320px,
 ) !default;
 
-$font-family-base: "Oswald", sans-serif;
-$font-weight-base: 300;
-$font-size-base: 0.875rem;
-$line-height-base: 1.714;
-$h1-font-size: 2rem;
-
-$yellow: $yellowBtn;
+$font-family-sans-serif: "Open Sans", sans-serif;
+$font-size-base: 0.813rem;
+$font-size-sm: 0.875rem;
+$line-height-base: 1.53;
+$h1-font-size: $font-size-base * 4.767 !default;
+$h2-font-size: $font-size-base * 2.155 !default;
+$btn-padding-x-sm: 20px;
+$btn-padding-y-sm: 10px;
+$btn-border-radius-sm: 5px;
+$btn-font-weight: 700;
+$primary: $green !default;
+$green: #0eb493 !default;
+$body-bg: $gray;
