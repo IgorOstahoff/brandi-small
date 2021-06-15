@@ -109,7 +109,10 @@ body {
 }
 
 .costom-meet {
-  padding-top: 350px;
+  // @include media(">=576px") {
+  //   padding-top: 350px;
+  // }
+  padding-top: 300px;
 }
 .intro-text-mini {
   padding-top: 20px;
@@ -146,7 +149,7 @@ body {
     }
   }
 }
-.features {
+.branding {
   h2 {
     padding-top: 70px;
     font-size: 28px;
@@ -159,4 +162,51 @@ body {
 }
 .features-color {
   background: #f4f7f9;
+}
+.branding-title,
+.development-title,
+.consulting-title {
+  font-size: 20px;
+  color: #062033;
+  padding-top: 50px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/png/brand.png);
+    width: 40px;
+    height: 40px;
+    left: -60px;
+    top: 55px;
+  }
+}
+.development-title {
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/png/development.png);
+    width: 40px;
+    height: 40px;
+    left: -60px;
+    top: 55px;
+  }
+}
+.consulting-title-title {
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/png/consulting.png);
+    width: 40px;
+    height: 40px;
+    left: -60px;
+    top: 55px;
+  }
+}
+.features {
+  padding-top: 75px;
+  padding-left: 70px;
+  p {
+    padding-top: 25px;
+    padding-bottom: 145px;
+  }
 }
